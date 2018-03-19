@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-<div class="container">
+<div class="container loginBack">
     <div class="row">
       <div class="col welcomeLogin">
           <h1>Welcome, </br>

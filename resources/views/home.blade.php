@@ -1,23 +1,22 @@
-@extends('layouts.app')
+@extends('master')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
+<div id="homeJumbo" class="container-fluid">
+  <div class="row">
+      <div class="col">
+          <div class="row">
+            <div class="col-6">
+              <p>Hello world!</p>
+            </dvi>
+            <div class="col-4">
+              <img src="https://vignette.wikia.nocookie.net/boomerang-from-cartoon-network/images/d/d7/Daffy_Duck.png/revision/latest?cb=20161123215131" />
             </div>
-        </div>
-    </div>
+            <div class="col-2">
+            </div>
+          </div>
+
+          </div>
+      </div>
+  </div>
 </div>
 @endsection
