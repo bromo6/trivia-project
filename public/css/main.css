@@ -37,7 +37,13 @@ HOME
   height: 500px;
   width: 100%;
   background-image: url('https://www.fg-a.com/wallpapers/geo-shapes-black-1280b.jpg');
+  background-size: cover;
   padding: 0;
+  color: white;
+}
+.emptyPro {
+  margin-left: -40px;
+  margin-top: -30px;
 }
 
 /*----------------------
