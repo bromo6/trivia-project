@@ -28,6 +28,9 @@
           <li class="nav-item active">
             <a class="nav-link" href="/settings">Settings</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
         </ul>
       </div>
     </nav>
