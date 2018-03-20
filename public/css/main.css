@@ -41,9 +41,99 @@ HOME
   padding: 0;
   color: white;
 }
+#helloQuaks {
+  font-size: 58px;
+}
+#dafADuck {
+  margin-top: 60px;
+  margin-left: 100px;
+}
+#button {
+  margin-left: -300px;
+  margin-top: 190px;
+  height: 80px;
+  width: 500px;
+  font-size: 45px;
+  border-radius: 50px;
+  color: black;
+  z-index: 50;
+}
 .emptyPro {
   margin-left: -40px;
   margin-top: -30px;
+}
+.proName {
+  margin-left: -36px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.homeText {
+  text-align: center;
+}
+.topIcons {
+  text-align: right;
+  margin-top: 40px;
+}
+.topMail, .topFacebook, .topInsta {
+  margin-top: 20px;
+}
+.tweet {
+  color: #0062ff;
+}
+.face {
+  color: #0f0fb9;
+}
+.finsta {
+  color: purple;
+}
+.mail {
+  color: #343a40;
+}
+.newStuff {
+  border-right: 1px solid black;
+}
+#newGame {
+  margin-left: 15px;
+  margin-bottom: 60px;
+  /* margin-top: 52px; */
+  font-size: 45px;
+}
+#gamerTag {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+.progress {
+  width: 80px;
+  height: 5px;
+  background-color: #c9cacc;
+  margin-left: -20px;
+  margin-top: -15px;
+}
+
+#highText, #prevText {
+  margin-left: 185px;
+  margin-bottom: 60px;
+  margin-top: 52px;
+  font-size: 45px;
+}
+.newQuest, #highScore, .score {
+  height: 55px;
+  width: 315px;
+  padding: 8px;
+  font-size: 25px;
+  box-shadow: 3px 3px 3px 4px #f8c246;
+  margin-bottom: 25px;
+}
+#highScore, .score {
+  margin-left: 175px;
+}
+
+.homeBod {
+  margin-top: 50px;
+  margin-bottom: 130px;
 }
 
 /*----------------------
@@ -65,3 +155,9 @@ SETTINGS
 FOOTER
 ------------------------
 ----------------------*/
+#foot {
+  height: 200px;
+  background: black;
+  color: white;
+  text-align: center;
+}
