@@ -18,23 +18,23 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active navIcon">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
             <a class="nav-link" href="/home">
                 <i class="fas fa-home fa-2x"></i>
                <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active navIcon">
+          <li class="nav-item active">
             <a class="nav-link" href="/profile">
               <i class="fas fa-user fa-2x"></i>
             </a>
           </li>
-          <li class="nav-item active navIcon">
+          <li class="nav-item active">
             <a class="nav-link" href="/settings">
               <i class="fas fa-cog fa-2x"></i>
             </a>
           </li>
-          <li class="nav-item active navIcon">
+          <li class="nav-item active">
             <a class="nav-link" href="/logout">
               <i class="fas fa-sign-out-alt fa-2x"></i>
             </a>
