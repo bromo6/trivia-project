@@ -3,7 +3,9 @@
 NAVBAR
 ------------------------
 ----------------------*/
-
+.navIcon {
+  float: right !important;
+}
 
 /*----------------------
 ------------------------
@@ -16,7 +18,9 @@ LOGIN
   margin-bottom: 40px;
 }
 .loginCard {
-  background: #4a4a4a;
+  background: #2a2a2a;
+  margin-bottom: 200px;
+  color: white;
 }
 .loginBack {
   background-image: url('images/daffyPic2.jpg');
@@ -33,6 +37,9 @@ REGISTER
 HOME
 ------------------------
 ----------------------*/
+#aboveJum {
+background: #f6c145;
+}
 #homeJumbo {
   height: 500px;
   width: 100%;
@@ -40,6 +47,8 @@ HOME
   background-size: cover;
   padding: 0;
   color: white;
+  transform: skewY(3deg);
+  transform-origin: 0;
 }
 #helloQuaks {
   font-size: 58px;
@@ -55,7 +64,7 @@ HOME
   width: 500px;
   font-size: 45px;
   border-radius: 50px;
-  color: black;
+  color: white;
   z-index: 50;
 }
 .emptyPro {
@@ -160,4 +169,7 @@ FOOTER
   background: black;
   color: white;
   text-align: center;
+}
+#copy {
+  padding-top: 100px;
 }

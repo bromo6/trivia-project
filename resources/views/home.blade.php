@@ -1,7 +1,8 @@
 @extends('master')
 
 @section('content')
-<div id="homeJumbo" class="container-fluid">
+<div id="aboveJum" class="container-fluid px-0 mx-0">
+  <div id="homeJumbo" class="container-fluid">
   <div class="row">
       <div class="col">
           <div class="row my-5 mx-5">
@@ -44,6 +45,8 @@
           </div>
       </div>
    </div>
+</div>
+
 </div>
 <div class="container homeBod">
   <div class="row">
