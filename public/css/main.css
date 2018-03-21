@@ -157,6 +157,17 @@ QUESTIONS
 SETTINGS
 ------------------------
 ----------------------*/
+.center{
+    font-size: 45px
+}
+.newQuest1, #highScore, .score {
+  height: 55px;
+  width: 315px;
+  padding: 8px;
+  font-size: 25px;
+  box-shadow: 3px 3px 3px 4px black;
+  margin-bottom: 25px;
+}
 
 
 /*----------------------
