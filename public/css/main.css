@@ -15,20 +15,35 @@ LOGIN
   margin-top: 40px;
   margin-bottom: 40px;
 }
+#welcomeTitle, #registerTitle {
+  font-size: 70px;
+}
+.aLogin:hover{
+  color: orange;
+}
+.aLogin {
+  color: orange;
+}
 .loginCard {
-  background: #2a2a2a;
+  background: #2a2a2af0;
   margin-bottom: 200px;
   color: white;
 }
-.loginBack {
-  background-image: url('images/daffyPic2.jpg');
+
+.helloBack, .registerBack {
+  background-image: url('https://i.pinimg.com/originals/cd/56/42/cd56425ab589c4027376d544bd32a82f.jpg');
 }
 /*----------------------
 ------------------------
 REGISTER
 ------------------------
 ----------------------*/
-
+.registerCard {
+  background: #2a2a2af0;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  color: white;
+}
 
 /*----------------------
 ------------------------

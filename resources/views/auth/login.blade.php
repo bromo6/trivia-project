@@ -1,10 +1,10 @@
 @extends('master')
 @section('content')
+<div class="container-fluid helloBack">
 <div class="container loginBack">
     <div class="row">
       <div class="col welcomeLogin">
-          <h1>Welcome, </br>
-              WiseQuackers!!</h1>
+          <h1 id="welcomeTitle">Welcome Back, WiseQuackers!!</h1>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -56,10 +56,13 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
+                              <p>Don't have an account?
+                                 <a class="aLogin" href="/register"> Create New Account</a>
+                              </p>
                                 <button type="submit" class="btn btn-outline-light">
                                     {{ __('Login') }}
                                 </button>
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn-link aLogin" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                             </div>
@@ -69,5 +72,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

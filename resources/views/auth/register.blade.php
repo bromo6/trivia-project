@@ -1,10 +1,16 @@
-@extends('layouts.app')
+@extends('master')
 
 @section('content')
+<div class="container-fluid registerBack">
 <div class="container">
+  <div class="row">
+    <div class="col welcomeLogin">
+        <h1 id="registerTitle">Welcome First Time,</br> WiseQuackers!</h1>
+    </div>
+  </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card registerCard">
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
@@ -73,5 +79,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
