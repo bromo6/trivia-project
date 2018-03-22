@@ -30,7 +30,7 @@ LOGIN
   color: white;
 }
 
-.helloBack, .registerBack {
+.helloBack, .registerBack, .resetBack {
   background-image: url('https://i.pinimg.com/originals/cd/56/42/cd56425ab589c4027376d544bd32a82f.jpg');
 }
 /*----------------------

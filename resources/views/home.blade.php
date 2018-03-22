@@ -1,6 +1,7 @@
 @extends('master')
 
 @section('content')
+<!--JUMBOTRON  --------------------------------------------------------------------------->
 <div id="aboveJum" class="container-fluid px-0 mx-0">
   <div id="homeJumbo" class="container-fluid">
   <div class="row">
@@ -45,9 +46,8 @@
           </div>
       </div>
    </div>
-</div>
-
-</div>
+</div></div>
+<!--USER STATS  -------------------------------------------------------------------------->
 <div class="container homeBod">
   <div class="row">
     <div class="col">

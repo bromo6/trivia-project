@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container-fluid registerBack">
-<div class="container">
+  <div class="container">
   <div class="row">
     <div class="col welcomeLogin">
         <h1 id="registerTitle">Welcome First Time,</br> WiseQuackers!</h1>
@@ -69,7 +69,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-outline-warning">
                                     {{ __('Register') }}
                                 </button>
                             </div>
@@ -79,6 +79,5 @@
             </div>
         </div>
     </div>
-</div>
-</div>
+</div></div>
 @endsection

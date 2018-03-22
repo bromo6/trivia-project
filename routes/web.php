@@ -27,6 +27,10 @@ Route::get('/settings', function () {
     return view('settings');
 });
 
+Route::get('/reset', function () {
+    return view('reset');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

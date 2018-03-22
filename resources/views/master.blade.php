@@ -12,6 +12,7 @@
     <title>@yield('title')</title>
   </head>
   <body>
+    <!--NAVBAR  -------------------------------------------------------------------->
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img height="70" src="images/mainLogo.png"/>
@@ -44,11 +45,11 @@
         </ul>
       </div>
     </nav>
-
+    <!--BODY OF PAGES  ------------------------------------------------------------->
     <div class="container-fluid" style="padding:0;">
       @yield('content')
     </div>
-
+    <!--FOOTER  -------------------------------------------------------------------->
     <footer id="foot">
       <div id="copy" class="copyright">
           <h7>© 2018 WiseQuackers Co. </h7>

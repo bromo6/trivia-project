@@ -1,8 +1,13 @@
 @extends('master')
 @section('content')
 
-    <h1 class="text-center">Settings</h1>
+
 <div class="container homeBod">
+  <div class="row">
+      <div class="col">
+        <h1 class="text-center">Settings</h1>
+      </div>
+  </div>
   <div class="row">
     <div class="col">
       <p id="gamerTag"input="text">Username 12</p>
