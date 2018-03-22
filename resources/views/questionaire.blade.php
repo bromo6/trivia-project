@@ -16,16 +16,16 @@
   <div class="row">
     <div class="col">
     <div class="row">
-      {{['chooices'][0]}}
+      {{['chooices'][0]['Rheumatic fever']}}
     </div>
     <div class="row">
-      {{['chooices'][1]}}
+      {{['chooices'][1]['Irritated  bowel syndrome']}}
     </div>
     <div class="row">
-      {{['chooices'][2]}}
+      {{['chooices'][2]['Dyslexia']}}
     </div>
     <div class="row">
-      {{['chooices'][3]}}
+      {{['chooices'][3]['Diabetes']}}
     </div>
     </div>
   </div>
