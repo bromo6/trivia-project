@@ -18,23 +18,28 @@
       <h2 id="newGame">Login Info</h2>
 
       <form>
+        First Name </br>
+        <input type="text" name="username" class="settingsPro"><br>
+        Last Name </br>
+        <input type="text" name="username" class="settingsPro"><br>
         Username </br>
-        <input type="text" name="username" class="newQuest"><br>
-        User Email: </br>
-        <input type="text" name="username" class="newQuest"><br>
-        User password:<br>
-        <input type="password" name="psw" class="newQuest">
+        <input type="text" name="username" class="settingsPro"><br>
+        Email </br>
+        <input type="text" name="username" class="settingsPro"><br>
+        Password:<br>
+        <input type="password" name="psw" class="settingsPro">
       </form>
 <br />
 
       <h2 id="newGame1">Password Reset</h2>
       <form>
          New Password:<br />
-        <input type="password" name="psw" class="newQuest"><br>
+        <input type="password" name="psw" class="settingsPro"><br>
         User password:<br>
-        <input type="password" name="psw" class="newQuest">
+        <input type="password" name="psw" class="settingsPro"></br>
+        <button type="btn" class="btn btn-outline-secondary settingSubmit">Submit</button>
       </form>
-       <input type="submit">
+
 
     </div>
 
