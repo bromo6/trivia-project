@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('master')
 
 @section('content')
+    <?php dump($question); ?>
 <section class="text-center">
-
 <h1>Take a Quack at it?!</h1>
 <h3>Answer the following question below</h3>
 
@@ -32,9 +32,9 @@
 </div>
 
     @if (!empty($question))
-    <div class="col-3" "text-center">
-        <div class="card mb-3">
-            <div class="card-body">
+    <div class="col-3 text-center"></div>
+        <div class="card mb-3"></div>
+            <div class="card-body"></div>
     @endif
 
 
