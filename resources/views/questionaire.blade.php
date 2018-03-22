@@ -15,26 +15,34 @@
   </div>
   <div class="row">
     <div class="col">
-    <div class="row">
-      {{['chooices'][0]['Rheumatic fever']}}
+        <form>
+            @csrf
+        @foreach($question['result'][0]['chooices'] as $answerChoice)
+
+            <label>
+                {{ $answerChoice }}
+                <input type="radio" name="{{ $answerChoice }}"/>
+            </label>
+        @endforeach
+        <!-- button goes here -->
+    </form>
+    {{-- <div class="row">
+      {{['result'][0]['chooices'][1]}}
     </div>
     <div class="row">
-      {{['chooices'][1]['Irritated  bowel syndrome']}}
+      {{['result'][0]['chooices'][2]}}
     </div>
     <div class="row">
-      {{['chooices'][2]['Dyslexia']}}
-    </div>
-    <div class="row">
-      {{['chooices'][3]['Diabetes']}}
-    </div>
+      {{['result'][0]['chooices'][3]}}
+    </div> --}}
     </div>
   </div>
 </div>
 
     @if (!empty($question))
-    <div class="col-3 text-center"></div>
+    {{-- <div class="col-3 text-center"></div>
         <div class="card mb-3"></div>
-            <div class="card-body"></div>
+            <div class="card-body"></div> --}}
     @endif
 
 

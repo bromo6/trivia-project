@@ -36,6 +36,9 @@ class HomeController extends Controller
 
 public function searchQuestion()  //request request is to communitcate with link
 {
+    // code that will eventually detect if a question is right/wrong,
+    // record that to the db
+
 
 
 
@@ -63,8 +66,9 @@ public function searchQuestion()  //request request is to communitcate with link
     curl_close($curl);
     //now create a new variable to convert api to php
     $question = json_decode($response, TRUE);
-    Log::info('this is a question');
-    Log::info($question);
+
+    // save this to the db
+
     //then now pass it on to the viewport
     //create a new variable
     $data = [
