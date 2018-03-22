@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
-use log;
+use Log;
 class HomeController extends Controller
 {
     /**
@@ -30,7 +30,7 @@ class HomeController extends Controller
       Auth::logout();
     return redirect('/login');
     }
-}
+
 
 // below is the function to call the API
 
@@ -42,7 +42,7 @@ public function searchQuestion()  //request request is to communitcate with link
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://apifort-trivia-database-v1.p.mashape.com/v1/query/trivia",
+  CURLOPT_URL => "https://apifort-trivia-database-v1.p.mashape.com/v1/query/trivia?count=1",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -63,13 +63,14 @@ public function searchQuestion()  //request request is to communitcate with link
     curl_close($curl);
     //now create a new variable to convert api to php
     $question = json_decode($response, TRUE);
-
+    Log::info('this is a question');
+    Log::info($question);
     //then now pass it on to the viewport
     //create a new variable
     $data = [
         'question'=> $question,
 
     ];
-    return view ('questionaire')->with($data); //now this will send it to the view page inputed, now go and do a new web.php route
+    return view('questionaire')->with($data); //now this will send it to the view page inputed, now go and do a new web.php route
     }
 }

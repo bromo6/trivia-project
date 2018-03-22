@@ -32,3 +32,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/logout', 'HomeController@logout');
+
+Route::get('/questionaire', 'HomeController@searchQuestion');
