@@ -16,7 +16,9 @@
             </div>
             <div class="col-5 homeText">
               <h2 id="helloQuaks">Hello WiseQuackers!</h2>
-                <button id="button" class="btn btn-outline-warning">Start New Game</button>
+                <a href="/questionaire">
+                    <button id="button" class="btn btn-outline-warning">Start New Game</button>
+                </a>
               </div>
             <div class="col-3">
               <img id="dafADuck" height="350" src="https://vignette.wikia.nocookie.net/boomerang-from-cartoon-network/images/d/d7/Daffy_Duck.png/revision/latest?cb=20161123215131" />
