@@ -31,3 +31,45 @@ class HomeController extends Controller
     return redirect('/login');
     }
 }
+
+// below is the function to call the API
+
+public function searchQuestion()  //request request is to communitcate with link
+{
+
+
+
+    $curl = curl_init();
+
+    curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://apifort-trivia-database-v1.p.mashape.com/v1/query/trivia",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_HTTPHEADER => array(
+    "Authorization: Basic YXJteW1hbmpkOk15U3BvcnRzMSE=",
+    "Cache-Control: no-cache",
+    "Postman-Token: d9c12396-a0ea-4f1e-9f0f-48362af17be8",
+    "X-Mashape-Key: BYUGGmSh06mshhKbproAIooNCAXzp136QpVjsn86Pj5ojxZnFT"
+      ),
+    ));
+
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+
+    curl_close($curl);
+    //now create a new variable to convert api to php
+    $question = json_decode($response, TRUE);
+
+    //then now pass it on to the viewport
+    //create a new variable
+    $data = [
+        'question'=> $question,
+
+    ];
+    return view ('questionaire')->with($data); //now this will send it to the view page inputed, now go and do a new web.php route
+    }
+}

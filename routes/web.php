@@ -29,6 +29,6 @@ Route::get('/settings', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 
 Route::get('/logout', 'HomeController@logout');
