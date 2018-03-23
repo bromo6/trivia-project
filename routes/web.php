@@ -38,3 +38,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/logout', 'HomeController@logout');
 
 Route::get('/questionaire', 'HomeController@searchQuestion');
+
+Route::get('/startgame', 'HomeController@startgame');
+
+Route::post('/submit-answer', 'HomeController@submitAnswer');

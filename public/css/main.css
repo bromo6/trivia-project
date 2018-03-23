@@ -52,6 +52,7 @@ HOME
 ----------------------*/
 #aboveJum {
 background: #f6c145;
+height: 575px;
 }
 #homeJumbo {
   height: 500px;
@@ -71,14 +72,18 @@ background: #f6c145;
   margin-left: 100px;
 }
 #button {
-  margin-left: -300px;
-  margin-top: 190px;
+  margin-left: -20px;
+  margin-top: 70px;
   height: 80px;
   width: 500px;
   font-size: 45px;
   border-radius: 50px;
   color: white;
   z-index: 50;
+}
+#numCorrect {
+    margin-top: 65px;
+    font-size: 25px;
 }
 .emptyPro {
   margin-left: -30px;
@@ -167,14 +172,22 @@ QUESTIONS
   border: 1px solid black;
   height: 285px;
   text-align: center;
+  border-radius: 30px;
   /* width: 250px; */
 }
 .questBox {
   width: 625px;
   margin-left: 235px;
+  font-size: 25px;
 }
 .asked {
-  margin-top: 100px;
+  margin-top: 80px;
+}
+.answersChoose {
+    margin-left: 360px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 20px;
 }
 
 

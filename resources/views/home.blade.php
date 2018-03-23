@@ -16,7 +16,11 @@
             </div>
             <div class="col-5 homeText">
               <h2 id="helloQuaks">Hello WiseQuackers!</h2>
-                <a href="/questionaire">
+              @if (!empty($questionsRight))
+                  <p id="numCorrect">You got {{ $questionsRight }} questions right!</p>
+
+              @endif
+                <a href="/startgame">
                     <button id="button" class="btn btn-outline-warning">Start New Game</button>
                 </a>
               </div>
@@ -50,8 +54,8 @@
    </div>
 </div></div>
 <!--USER STATS  -------------------------------------------------------------------------->
-<div class="container homeBod">
-  <div class="row">
+{{-- <div class="container homeBod"> --}}
+  {{-- <div class="row">
     <div class="col">
       <p id="gamerTag">Username 12</p>
     </div>
@@ -59,7 +63,6 @@
   <div class="row">
     <div class="col-6 newStuff">
       <h2 id="newGame">Newest Games</h2>
-
       <p class="newQuest"> 12 questions correct </p>
       <p class="newQuest"> 24 questions correct </p>
       <p class="newQuest"> 8 questions correct </p>
@@ -82,6 +85,6 @@
         </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 @endsection

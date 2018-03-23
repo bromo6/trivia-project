@@ -14,7 +14,7 @@
   <body>
     <!--NAVBAR  -------------------------------------------------------------------->
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/home">
         <img height="70" src="images/mainLogo.png"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,25 +23,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/home">
-                <i class="fas fa-home fa-2x"></i>
+            <a class="nav-link" href="/settings">
+                <i class="fas fa-cog fa-2x"></i>
                <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          {{-- <li class="nav-item active">
             <a class="nav-link" href="/profile">
               <i class="fas fa-user fa-2x"></i>
             </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/settings">
-              <i class="fas fa-cog fa-2x"></i>
-            </a>
-          </li>
+          </li> --}}
           <li class="nav-item active">
             <a class="nav-link" href="/logout">
-              <i class="fas fa-sign-out-alt fa-2x"></i>
+                <i class="fas fa-sign-out-alt fa-2x"></i>
             </a>
           </li>
+          {{-- <li class="nav-item active">
+            <a class="nav-link" href="/home">
+              <i class="fas fa-home fa-2x"></i>
+            </a>
+          </li> --}}
         </ul>
       </div>
     </nav>
