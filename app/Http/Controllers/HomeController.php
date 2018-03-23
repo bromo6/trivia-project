@@ -31,12 +31,24 @@ class HomeController extends Controller
     public function index()
     {
       // retrieve the user email/login
+
+        $questionsRight = CorrectAnswer::where("user_id", '=', Auth::id())->get();
+        if (count($questionsRight) > 1) {
+          $questionsRight = 0;
+        } else {
+          $questionsRight = count($questionsRight);
+        }
+
         $userDetails = User::find(Auth::id());
         $data = [
+          'questionsRight' => $questionsRight,
           'userDetails' => $userDetails
         ];
+        Log::info($questionsRight);
         return view('home')->with($data);
     }
+
+
     public function logout() {
       Auth::logout();
     return redirect('/login');
@@ -58,13 +70,7 @@ public function submitAnswer(Request $request){
 
         return redirect('/questionaire');
     } else {
-
-        $questionsRight = CorrectAnswer::where("user_id", '=', Auth::id())->count();
-
-        $data = [
-            'questionsRight' => $questionsRight
-        ];
-        return view('home')->with($data);
+        return redirect('/home');
         // the answer was wrong. return to home
     }
 

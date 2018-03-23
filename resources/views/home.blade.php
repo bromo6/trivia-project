@@ -9,17 +9,14 @@
           <div class="row my-5 mx-5">
             <div class="col-2">
               <img class="rounded-circle emptyPro" height="100" width="100" src="images/empty-profile.png"/>
-              <p class="proName">{{ $userDetails->name }}</p>
+              <p class="proName">{{ $userDetails->name or 'N/A' }}</p>
               <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="col-5 homeText">
               <h2 id="helloQuaks">Hello WiseQuackers!</h2>
-              @if (!empty($questionsRight))
                   <p id="numCorrect">You got {{ $questionsRight }} questions right!</p>
-
-              @endif
                 <a href="/startgame">
                     <button id="button" class="btn btn-outline-warning">Start New Game</button>
                 </a>
