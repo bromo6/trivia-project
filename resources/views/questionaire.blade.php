@@ -8,9 +8,9 @@
 
 </section>
 <div class="container">
-  <div class="row">
+  <div class="row questBox">
     <div class="col quest">
-      <p>{{$question['result'][0]['question']}}</p>
+      <p class="asked">{{$question['result'][0]['question']}}</p>
     </div>
   </div>
   <div class="row">

@@ -163,6 +163,19 @@ background: #f6c145;
 QUESTIONS
 ------------------------
 ----------------------*/
+.quest {
+  border: 1px solid black;
+  height: 285px;
+  text-align: center;
+  /* width: 250px; */
+}
+.questBox {
+  width: 625px;
+  margin-left: 235px;
+}
+.asked {
+  margin-top: 100px;
+}
 
 
 /*----------------------
@@ -178,6 +191,7 @@ SETTINGS
   width: 290px;
   height: 40px;
   border: 1px solid black;
+  background: white;
 }
 .settingBack {
   background: #f5a540;

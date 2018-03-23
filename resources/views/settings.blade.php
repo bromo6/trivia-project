@@ -18,14 +18,14 @@
         <h2 id="newGame">Login Info</h2>
 
         <form>
-          First Name </br>
-          <span class="settingsPro"></span>
+          <p>First Name</p> </br>
+          <div class="settingsPro"></div>
           <!-- <input type="text" name="username" class="settingsPro"><br> -->
-          Last Name </br>
-          <span class="settingsPro"></span>
+          <p>Last Name</p> </br>
+          <div class="settingsPro"></div>
           <!-- <input type="text" name="username" class="settingsPro"><br> -->
-          Email </br>
-          <span class="settingsPro"></span>
+          <p>Email</p> </br>
+          <div class="settingsPro"></div>
           <!-- <input type="text" name="username" class="settingsPro"><br> -->
         </form>
         <br />
