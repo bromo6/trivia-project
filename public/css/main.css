@@ -175,6 +175,19 @@ SETTINGS
 }
 .settingsPro {
   margin-bottom: 30px;
+  width: 290px;
+  height: 40px;
+  border: 1px solid black;
+}
+.settingBack {
+  background: #f5a540;
+}
+
+.settingSubmit {
+  margin-bottom: 30px;
+}
+.titleSet {
+  margin-top: 30px;
 }
 
 
