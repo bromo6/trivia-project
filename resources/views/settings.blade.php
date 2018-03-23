@@ -10,7 +10,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <p id="gamerTag"input="text">Username 12</p>
+        <p id="gamerTag"input="text">{{ $userDetails->name }}</p>
       </div>
     </div>
     <div class="row">

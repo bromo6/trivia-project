@@ -9,6 +9,7 @@ use App\Question;
 use App\AnswerChoice;
 use App\CorrectAnswer;
 use DB;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -29,7 +30,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      // retrieve the user email/login
+        $userDetails = User::find(Auth::id());
+        $data = [
+          'userDetails' => $userDetails
+        ];
+        return view('home')->with($data);
     }
     public function logout() {
       Auth::logout();

@@ -90,7 +90,7 @@ height: 575px;
   margin-top: -30px;
 }
 .proName {
-  margin-left: -36px;
+  margin-left: -20px;
   margin-top: 15px;
   font-size: 20px;
 }
@@ -169,11 +169,12 @@ QUESTIONS
 ------------------------
 ----------------------*/
 .quest {
-  border: 1px solid black;
+  border: 1px solid #b3b3b3;
   height: 285px;
   text-align: center;
   border-radius: 30px;
-  /* width: 250px; */
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px 3px #888888;
 }
 .questBox {
   width: 625px;
@@ -188,6 +189,18 @@ QUESTIONS
     margin-top: 60px;
     margin-bottom: 60px;
     font-size: 20px;
+}
+.cat {
+    border: 1px solid #b3b3b3;
+    width: 320px;
+    height: 60px;
+    font-size: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #888888;
+}
+.category {
+  text-align: center;
 }
 
 

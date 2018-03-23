@@ -9,8 +9,8 @@
 </section>
 <div class="container">
     <div class="row">
-        <div class="col">
-            <p>{{$question['result'][0]['category']}}</p>
+        <div class="col category">
+            <p class="cat mt-2"> Category: {{$question['result'][0]['category']}}</p>
         </div>
     </div>
   <div class="row questBox">

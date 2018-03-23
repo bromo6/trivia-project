@@ -9,7 +9,7 @@
           <div class="row my-5 mx-5">
             <div class="col-2">
               <img class="rounded-circle emptyPro" height="100" width="100" src="images/empty-profile.png"/>
-              <p class="proName">Username 12</p>
+              <p class="proName">{{ $userDetails->name }}</p>
               <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
