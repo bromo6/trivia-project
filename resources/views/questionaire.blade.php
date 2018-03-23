@@ -1,9 +1,11 @@
 @extends('master')
 
 @section('content')
-    <?php dump($question); ?>
+    <div class="container-fluid questBack">
+
+    <?php// dump($question); ?>
 <section class="text-center">
-<h1>Take a Quack at it?!</h1>
+<h1>How long can you Quack?!</h1>
 <h3>Answer the following question below</h3>
 
 </section>
@@ -33,7 +35,7 @@
                 </div>
             </div>
         @endforeach
-        <button class="btn btn-outline-warning">Submit</button>
+        <button class="btn btn-outline-warning subMit">Submit</button>
         <!-- button goes here -->
     </form>
     {{-- <div class="row">
@@ -55,5 +57,6 @@
             <div class="card-body"></div> --}}
     @endif
 
+</div>
 
 @endsection

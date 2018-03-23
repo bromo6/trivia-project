@@ -23,8 +23,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/settings">
-                <i class="fas fa-cog fa-2x"></i>
+            <a class="nav-link" href="/logout">
+                <i class="fas fa-sign-out-alt fa-2x"></i>
                <span class="sr-only">(current)</span></a>
           </li>
           {{-- <li class="nav-item active">
@@ -32,11 +32,11 @@
               <i class="fas fa-user fa-2x"></i>
             </a>
           </li> --}}
-          <li class="nav-item active">
-            <a class="nav-link" href="/logout">
-                <i class="fas fa-sign-out-alt fa-2x"></i>
+          {{-- <li class="nav-item active">
+            <a class="nav-link" href="/settings">
+                <i class="fas fa-cog fa-2x"></i>
             </a>
-          </li>
+          </li> --}}
           {{-- <li class="nav-item active">
             <a class="nav-link" href="/home">
               <i class="fas fa-home fa-2x"></i>
@@ -46,7 +46,7 @@
       </div>
     </nav>
     <!--BODY OF PAGES  ------------------------------------------------------------->
-    <div class="container-fluid" style="padding:0;">
+    <div class="container-fluid color" style="padding:0;">
       @yield('content')
     </div>
     <!--FOOTER  -------------------------------------------------------------------->
